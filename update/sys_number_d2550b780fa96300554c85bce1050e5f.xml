@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_282063_pycube_in_organizations">x_282063_pycube_in_organizations</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>CUST</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-01 06:28:00</sys_created_on>
+        <sys_id>d2550b780fa96300554c85bce1050e5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CUST</sys_name>
+        <sys_package display_value="Pycube Inventory" source="x_282063_pycube_in">86f6f2a40fe16300554c85bce1050e1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pycube Inventory">86f6f2a40fe16300554c85bce1050e1f</sys_scope>
+        <sys_update_name>sys_number_d2550b780fa96300554c85bce1050e5f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-01 06:28:00</sys_updated_on>
+    </sys_number>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_282063_pycube_in.account_information_user" name="x_282063_pycube_in.account_information_user">8748b2a40fe16300554c85bce1050e72</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-31 10:52:30</sys_created_on>
+        <sys_id>4348b2a40fe16300554c85bce1050e74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>8748b2a40fe16300554c85bce1050e72</sys_name>
+        <sys_package display_value="Pycube Inventory" source="x_282063_pycube_in">86f6f2a40fe16300554c85bce1050e1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pycube Inventory">86f6f2a40fe16300554c85bce1050e1f</sys_scope>
+        <sys_update_name>sys_embedded_help_role_4348b2a40fe16300554c85bce1050e74</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-31 10:52:30</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

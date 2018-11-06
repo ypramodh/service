@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_status" label="Status" language="en" table="x_282063_pycube_in_organizations">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_status</element>
+            <help/>
+            <hint/>
+            <label>Status</label>
+            <language>en</language>
+            <name>x_282063_pycube_in_organizations</name>
+            <plural>Status</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-11-01 06:33:04</sys_created_on>
+            <sys_id>a48643b80fa96300554c85bce1050e52</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Status</sys_name>
+            <sys_package display_value="Pycube Inventory" source="x_282063_pycube_in">86f6f2a40fe16300554c85bce1050e1f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pycube Inventory">86f6f2a40fe16300554c85bce1050e1f</sys_scope>
+            <sys_update_name>sys_documentation_x_282063_pycube_in_organizations_u_status_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-11-01 06:33:04</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

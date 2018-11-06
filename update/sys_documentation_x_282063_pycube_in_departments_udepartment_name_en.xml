@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="udepartment_name" label="Department Name" language="en" table="x_282063_pycube_in_departments">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>udepartment_name</element>
+            <help/>
+            <hint/>
+            <label>Department Name</label>
+            <language>en</language>
+            <name>x_282063_pycube_in_departments</name>
+            <plural>Department Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-10-31 11:07:12</sys_created_on>
+            <sys_id>56abba280fe16300554c85bce1050ebb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Department Name</sys_name>
+            <sys_package display_value="Pycube Inventory" source="x_282063_pycube_in">86f6f2a40fe16300554c85bce1050e1f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pycube Inventory">86f6f2a40fe16300554c85bce1050e1f</sys_scope>
+            <sys_update_name>sys_documentation_x_282063_pycube_in_departments_udepartment_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-10-31 11:07:12</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_user" label="Users" max_length="40" name="x_282063_pycube_in_users" type="collection">
+        <element label="Account Name" mandatory="true" max_length="32" name="u_account_name" reference="x_282063_pycube_in_organizations" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Middle name" max_length="40" name="u_middle_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Reporting Location Address" max_length="40" name="u_reporting_location_address" type="string"/>
+        <element label="Reporting Supervisor" max_length="32" name="u_reporting_supervisor" reference="x_282063_pycube_in_users" type="reference"/>
+        <element label="Reporting Supervisor not available" max_length="40" name="u_reporting_supervisor_not_available" type="boolean"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Role" mandatory="true" max_length="1024" name="u_role" reference="x_282063_pycube_in_pycube_role" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Supervisor Title" max_length="40" name="u_supervisor_title" type="string"/>
+        <index name="index">
+            <element name="u_account_name"/>
+        </index>
+        <index name="index2">
+            <element name="u_reporting_supervisor"/>
+        </index>
+    </element>
+</database>

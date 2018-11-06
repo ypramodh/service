@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="sys_user_role" label="Pycube Role" max_length="40" name="x_282063_pycube_in_pycube_role" type="collection"/>
+</database>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>ts_query</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>generateAutoNumber</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[function generateAccountNumber(){
+	var prefix = 'A';
+	var gr = new GlideRecord("x_282063_pycube_in_organizations");
+	//var gr =new GlideRecord("x_282063_pycube_in_organizations");
+	gr.addQuery("u_account_id",'STARTSWITH',prefix);
+	gr.orderByDesc("u_account_id");
+	gr.query(); 
+	if(gr.next()){
+		var accID = gr.u_account_id;
+		var refNumber = accID.slice(1).replace(/^0+/, "");
+		//gs.addErrorMessage(parseInt(refNumber));
+		accID = parseInt(refNumber)+1; 
+		var result = pad_with_zeroes(accID, 3); 
+		return prefix+result; 
+	}else{
+		return prefix+'001';
+	}
+}
+function generateDeptNumber(){
+	var prefix = 'D';
+	var gr = new GlideRecord("x_282063_pycube_in_departments");
+	gr.addQuery("u_department_id",'STARTSWITH',prefix);
+	gr.orderByDesc("u_department_id");
+	gr.query(); 
+	if(gr.next()){
+		var deptID = gr.u_department_id;
+		var refNumber = deptID.slice(1).replace(/^0+/, "");
+		//gs.addErrorMessage(parseInt(refNumber));
+		accID = parseInt(refNumber)+1; 
+		var result = pad_with_zeroes(accID, 3); 
+		return prefix+result; 
+	}else{
+		return prefix+'001';
+	}
+}
+
+
+// prefix zeros
+function pad_with_zeroes(number, length) { 
+	var my_string = '' + number;
+	while (my_string.length < length) {
+		my_string = '0' + my_string;
+	} 
+	return my_string;
+
+}]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-05 06:05:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fa056fc60f212300554c85bce1050ed0</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>generateAutoNumber</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pycube Inventory" source="x_282063_pycube_in">86f6f2a40fe16300554c85bce1050e1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pycube Inventory">86f6f2a40fe16300554c85bce1050e1f</sys_scope>
+        <sys_update_name>sys_script_fa056fc60f212300554c85bce1050ed0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-05 07:26:34</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=fa056fc60f212300554c85bce1050ed0"/>
+</record_update>

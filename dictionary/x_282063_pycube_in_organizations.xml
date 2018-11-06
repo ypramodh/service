@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Organizations" max_length="40" name="x_282063_pycube_in_organizations" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="ID" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Account Admin" max_length="32" name="u_account_admin" reference="x_282063_pycube_in_users" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:generateAccountNumber()" label="Account ID" mandatory="true" max_length="40" name="u_account_id" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Account Name" mandatory="true" max_length="250" name="u_account_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Active" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element label="Active" sequence="0" value="Active"/>
+                <element label="Inactive" sequence="1" value="Inactive"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_account_admin"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Departments" max_length="40" name="x_282063_pycube_in_departments" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="ID" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Department Name" mandatory="true" max_length="250" name="udepartment_name" type="string"/>
+        <element label="Account Name" mandatory="true" max_length="32" name="u_account_name" reference="x_282063_pycube_in_organizations" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" dependent="u_account_name" dependent_on_field="u_account_name" label="Department admin" max_length="40" name="u_department_admin" reference="x_282063_pycube_in_users" type="string" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:generateDeptNumber()" label="Department ID" max_length="40" name="u_department_id" read_only="true" type="string"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Department Users" max_length="1024" name="u_department_users" reference="x_282063_pycube_in_users" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Active" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element label="Active" sequence="0" value="Active"/>
+                <element label="Inactive" sequence="1" value="Inactive"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_account_name"/>
+        </index>
+    </element>
+</database>

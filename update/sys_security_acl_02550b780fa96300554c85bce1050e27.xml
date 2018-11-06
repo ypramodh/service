@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_282063_pycube_in_organizations</description>
+        <name>x_282063_pycube_in_organizations</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-01 06:27:59</sys_created_on>
+        <sys_id>02550b780fa96300554c85bce1050e27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_282063_pycube_in_organizations</sys_name>
+        <sys_package display_value="Pycube Inventory" source="x_282063_pycube_in">86f6f2a40fe16300554c85bce1050e1f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pycube Inventory">86f6f2a40fe16300554c85bce1050e1f</sys_scope>
+        <sys_update_name>sys_security_acl_02550b780fa96300554c85bce1050e27</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-01 06:27:59</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>
